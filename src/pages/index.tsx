@@ -3,29 +3,48 @@ import Page from '../components/layout/Page'
 import Container from '../components/layout/Container'
 import styled from '../utils/styled'
 
+/*
+const countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+const x = setInterval(function () {
+  const now = new Date().getTime();
+  const distance = countDownDate - now;
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "BU DEĞİL MİYMİŞ?";
+  }
+}, 1000);
+ */
+
 function IndexPage() {
   return (
     <Page>
       <Container>
         <PageContent>
-          <h1>Welcome!</h1>
+          <h1>Slap Bet for Toprak</h1>
           <p>
-            Welcome to the Redux 4 + TypeScript 3.3 example! This example site shows you the ideal project structure, recommended libraries,
-            as well as design pattern on writing type-safe React + Redux app with TypeScript.
+            Bir gün bilkentin kampüsünde yürüyorum karşımda bir çocuk dünya başına yıkılmmış gibi üzgün. "Çocuk" dedim, "neyin var?". Dayı, dedi. Dayı beni öldürdüler. Dedim bilkentte herkes ya ölmüştür ya da mühendislik okumuyordur. Öyle değil dedi mesele ölmek değil. Neymiş mesele biliyor musun? Mesele ölmek değilmiş,
+          </p>
+          <h3>
+            MESELE DOST BİLDİĞİN EN GÜVENDİĞİN İNSANIN ELİNDEN ÖLMEKMİŞ.
+          </h3>
+          <p>
+            Şimdiii sana bu siteyi bi anlatayım. Bu sayfa hoşgeldin sayfası.
           </p>
           <p>
-            This project is intended as a supplement to{' '}
-            <a href="https://resir014.xyz/posts/2018/07/06/redux-4-plus-typescript/" target="blank" rel="noopener noreferrer">
-              this post
-            </a>
-            . To demonstrate it, I created a website which pulls data from the{' '}
-            <a href="https://docs.opendota.com" target="blank" rel="noopener noreferrer">
-              OpenDota API
-            </a>
-            , and display information like professional teams, heroes, as well as top players by hero. This will also demonstrate how to
-            structure your stores for each feature/module in a Redux-enabled app.
+            Havalı sözler dışında bu sayfada bir kaç tane geri sayım saati bulabilirsin. Hangisinin gerçek olduğunu asla bilemeyeceksin böylece korku her an yanında olacak.
           </p>
-          <p>Enjoy your stay!</p>
+          <p id="demo"></p>
+          <p>
+            Ayrıca bir sayfada beraber fotoğraaflarımı bulabilirsin, öbür sayfada ise bu önemli ana nasıl hazırlandığımı inceleyebilirsin.
+          </p>
+          <p>Bu sitede gezinmenin keyfini çıkar, artık ne kadar çıkarabilirsen</p>
         </PageContent>
       </Container>
     </Page>

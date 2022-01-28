@@ -23,7 +23,7 @@ const Routes: React.SFC = () => (
   <Root>
     <Global styles={normalize} />
     <Global styles={globals} />
-    <Header title="Example App" />
+    <Header title="Topraklar ve Tokatlar" />
     <Switch>
       <Route exact path="/" component={IndexPage} />
       <Route path="/heroes" component={HeroesPage} />
